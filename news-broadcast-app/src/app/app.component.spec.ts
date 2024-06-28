@@ -3,6 +3,8 @@ import { AppComponent } from './app.component';
 import { NewsListComponent } from './pages/news-list/news-list.component';
 import { NewsService } from './shared/services/news.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
+import { FilterNewsPipe } from './shared/pipe/filter-news.pipe';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -10,8 +12,9 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppComponent, NewsListComponent],
-      providers: [NewsService, HttpClient, HttpHandler]
+      declarations: [AppComponent, NewsListComponent, FilterNewsPipe],
+      providers: [NewsService, HttpClient, HttpHandler],
+      imports: [FormsModule],
     }).compileComponents();
   });
 
