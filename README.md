@@ -2,10 +2,10 @@
 
 # Commands for running
 
-npm install // for installing node module
+npm install  `for installing node module`
 
-ng build // for build project
+ng build  `for build project`
 
-npm start // to start application on local
+npm start  `to start application on local`
 
-ng test --code-coverage --watch=false --browsers=ChromeHeadless // for unit test case
+ng test --code-coverage --watch=false --browsers=ChromeHeadless `for unit test case`
